@@ -16,7 +16,7 @@ const App = () => {
           </div>
 
           <div class="col-12">
-            <div class="text-center p-7 border-round-sm bg-primary font-bold">
+            <div class="text-center p-7 border-round-sm bg-primary">
               <LocalidadeLista />
 
             </div>

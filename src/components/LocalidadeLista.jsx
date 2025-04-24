@@ -12,7 +12,7 @@ export default class LocalidadeLista extends Component {
                             title={item.logradouro}
                             subTitle={`${item.bairro}, ${item.cidade} - ${item.uf}`}
                             className="shadow-2" >
-                                <p className="m-0"><strong>CEP:</strong> {item.cep}</p>
+                                <p className="m-0">CEP:{item.cep}</p>
                         </Card>
                     </div>
                 ))}
