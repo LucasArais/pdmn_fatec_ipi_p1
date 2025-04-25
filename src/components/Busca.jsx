@@ -1,5 +1,3 @@
-// rcc
-
 import React, { Component } from 'react'
 
 import {Button} from 'primereact/button'
@@ -17,7 +15,7 @@ export default class Busca extends Component {
     }
     
 
- onFormSubmit = (event) => {
+    onFormSubmit = (event) => {
         event.preventDefault()
         this.props.onBuscaRealizada(this.state.termoDeBusca)
 
@@ -27,7 +25,7 @@ export default class Busca extends Component {
     return (
         <form onSubmit={this.onFormSubmit}>
             <div
-                className='flex flex-column'>
+                className='flex flex-col gap-2 w-full max-w-sm'>
                     <IconField iconPosition='left'>
                         <InputIcon className='pi pi-search'></InputIcon>
                         <InputText  

@@ -3,7 +3,7 @@ import Busca from "./components/Busca"
 import LocalidadeLista from "./components/LocalidadeLista"
 import cepClient from "./utils/cepClient"
 import { ficticios } from "./components/ficticios"
-
+import Grafico from "./components/Grafico"
 
 export default class App extends React.Component {
 
@@ -33,19 +33,18 @@ export default class App extends React.Component {
 
   render() {
     return (
-
-      <div class="grid nested-grid">
-        <div class="col-8">
-          <div class="grid">
-            <div class="col-12">
-              <div class="text-center p-7 border-round-sm bg-primary font-bold">
+      <div className="grid nested-grid">
+        <div className="col-7">
+          <div className="grid">
+            <div className="col-12">
+              <div className="text-center p-7 border-round-sm bg-primary font-bold">
                 <Busca dica='Buscar CEP'
                   onBuscaRealizada={this.onBuscaRealizada} />
               </div>
             </div>
 
-            <div class="col-12">
-              <div class="text-center p-7 border-round-sm bg-primary">
+            <div className="col-12">
+              <div className="text-center p-7 border-round-sm bg-primary">
                 <LocalidadeLista localidades={[...this.state.localidades, ...ficticios]} />
 
 
@@ -53,9 +52,10 @@ export default class App extends React.Component {
             </div>
           </div>
         </div>
-        <div class="col-4">
-          <div class="text-center p-8 border-round-sm h-full bg-primary font-bold">
-            grafico vai aqui
+        <div className="col-5">
+          <div className="text-center p-8 border-round-sm h-full bg-primary font-bold">
+            <h2>Gráfico de Pizza</h2>
+            <Grafico dados={[...this.state.localidades, ...ficticios]} />
           </div>
         </div>
       </div>

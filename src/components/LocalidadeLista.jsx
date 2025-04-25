@@ -5,7 +5,7 @@ export default class LocalidadeLista extends Component {
     render() {
         const localidades = this.props.localidades || []
 
-        const locaisLimitados = localidades.slice(0, 2)
+        const locaisLimitados = localidades.slice(0, 10)
         return (
             <div className="grid p-4">
                 {locaisLimitados.map((item, dado) => (
@@ -14,12 +14,11 @@ export default class LocalidadeLista extends Component {
                             title={item.logradouro}
                             subTitle={`${item.bairro}, ${item.localidade} - ${item.uf}`}
                             className="shadow-2" >
-                            <p className="m-0">CEP:{item.cep}</p>
+                            <p className="m-0">CEP: {item.cep}</p>
                         </Card>
                     </div>
                 ))}
             </div>
         );
     }
-
 }
