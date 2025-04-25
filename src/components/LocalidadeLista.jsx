@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Card } from 'primereact/card'
 import { ficticios } from './ficticios'
+
 export default class LocalidadeLista extends Component {
     render() {
         const localidades = this.props.enderecos || ficticios

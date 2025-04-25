@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "axios": "^1.8.4",
+    "axios": "^1.9.0",
     "consulta-cep": "file:",
     "primeflex": "^4.0.0",
     "primeicons": "^7.0.0",
