@@ -11,7 +11,9 @@ export default class Busca extends Component {
     }
 
     onTermoAlterado = (event) => {
-        this.setState({ termoDeBusca: event.target.value })
+        const valorDigitado = event.target.value;
+        const somenteNumeros = valorDigitado.replace(/\D/g, '');
+        this.setState({ termoDeBusca: somenteNumeros });
     }
     
 
