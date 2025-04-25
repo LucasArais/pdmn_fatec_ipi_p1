@@ -15,7 +15,7 @@
     "consulta-cep": "file:",
     "primeflex": "^4.0.0",
     "primeicons": "^7.0.0",
-    "primereact": "^10.9.4",
+    "primereact": "^10.9.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-dotenv": "^0.1.3"

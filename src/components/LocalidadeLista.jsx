@@ -3,12 +3,12 @@ import { Card } from 'primereact/card'
 
 export default class LocalidadeLista extends Component {
     render() {
-        const localidades = this.props.localidades || []
+        const localidades = this.props.localidades
 
-        const locaisLimitados = localidades.slice(0, 10)
+        
         return (
             <div className="grid p-4">
-                {locaisLimitados.map((item, dado) => (
+                {localidades.map((item, dado) => (
                     <div key={dado} className="col-12 mb-3">
                         <Card
                             title={item.logradouro}
